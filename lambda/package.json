@@ -1,5 +1,5 @@
 {
-  "name": "milhasgram",
+  "name": "Lambda Event Notification POC",
   "version": "1.0.0",
   "description": "",
   "main": "dist/app.js",
@@ -12,14 +12,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/edurodriguesdias/milhasgram.git"
+    "url": "git+https://github.com/edurodriguesdias/lambda-event-notification-poc.git"
   },
   "author": "Eduardo Dias",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/edurodriguesdias/milhasgram/issues"
+    "url": "https://github.com/edurodriguesdias/lambda-event-notification-poc/issues"
   },
-  "homepage": "https://github.com/edurodriguesdias/milhasgram#readme",
+  "homepage": "https://github.com/edurodriguesdias/lambda-event-notification-poc#readme",
   "devDependencies": {
     "@types/aws-lambda": "^8.10.133",
     "@types/jest": "^29.5.0",
@@ -28,17 +28,5 @@
     "ts-jest": "^29.1.0",
     "tslint": "^6.1.3",
     "typescript": "^4.9.5"
-  },
-  "dependencies": {
-    "aws-sdk": "^2.1338.0",
-    "axios": "^1.3.2",
-    "crypto-hash": "^2.0.1",
-    "dotenv": "^16.0.3",
-    "dynamo-ts": "^0.0.4-prealpha",
-    "mongoose": "^6.9.1",
-    "nodemon": "^2.0.20",
-    "object-hash": "^3.0.0",
-    "telegraf": "^4.11.2",
-    "ts-md5": "^1.3.1"
   }
 }

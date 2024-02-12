@@ -3,6 +3,6 @@ import type { APIGatewayProxyEventV2, APIGatewayProxyResultV2, Context } from 'a
 type LambdaFunctionUrlEvent = APIGatewayProxyEventV2
 
 export const handler = async (event: LambdaFunctionUrlEvent, context: Context) => {
-    console.log('Event', event)
+    console.log('Event received', event)
     console.log('Context', context)
 }
