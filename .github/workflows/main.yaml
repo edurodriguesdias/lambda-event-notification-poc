@@ -16,10 +16,10 @@ jobs:
         run: npm run build
 
       - name: Move node_modules to dist
-        run: mv node_modules lambda/dist/node_modules
+        run: mv node_modules dist/node_modules
 
       - name: Zip
-        run: (cd lambda/dist && zip -r ../lambda.zip .)
+        run: (cd dist && zip -r ../lambda.zip .)
 
       - name: Deploying lambda
         uses: appleboy/lambda-action@master
