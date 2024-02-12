@@ -2,7 +2,7 @@
   "name": "Lambda Event Notification POC",
   "version": "1.0.0",
   "description": "",
-  "main": "dist/app.js",
+  "main": "dist/index.js",
   "rootDir": "src",
   "scripts": {
     "build": "tsc",
