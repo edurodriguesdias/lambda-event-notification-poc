@@ -1,0 +1,6 @@
+template-file-path: ./resources.yaml
+
+parameteres:
+tags:
+  environment: 'dev'
+  application: 'lambda-event-notification-poc'
