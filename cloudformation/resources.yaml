@@ -3,7 +3,6 @@ Resources:
   EventNotificationBucket:
     Type: 'AWS::S3::Bucket'
     Properties:
-      BucketName: poc-event-notification-lambda
       Tags:
       - Key: environment
         Value: dev
