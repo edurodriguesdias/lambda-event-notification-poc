@@ -1,4 +1,4 @@
-template-file-path: ./resources.yaml
+template-file-path: ./cloudformation/resources.yaml
 
 parameteres:
 tags:
