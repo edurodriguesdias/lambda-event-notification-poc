@@ -2,7 +2,7 @@
 
 This repository contains a proof of concept (POC) demonstrating event notification setup between AWS Lambda and AWS S3.
 
-## Propouse
+## Proposal
 In this POC, we'll showcase the setup of a Lambda function configured to be triggered whenever a new object is uploaded to a designated S3 bucket. 
 Upon triggering, the Lambda function will automatically process the content of the uploaded file, enabling actions such as data transformation, validation, or integration with other services. 
 
