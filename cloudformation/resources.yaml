@@ -4,17 +4,16 @@ Resources:
     Type: 'AWS::S3::Bucket'
     Properties:
       BucketName: poc-event-notification-lambda
-
-  DocumentsFolder:
-    Type: AWS::S3::Bucket::Object
-    Properties:
-      Bucket: !Ref EventNotificationBucket
-      Key: documents/
-      ContentType: application/vnd.amazon.ebook
-
-  SheetsFolder:
-    Type: AWS::S3::Bucket::Object
-    Properties:
-      Bucket: !Ref EventNotificationBucket
-      Key: sheets/
-      ContentType: application/vnd.amazon.ebook
+      Tags:
+      - Key: environment
+        Value: dev
+      - Key: application
+        Value: lambda-event-notification-poc
+      LifecycleConfiguration:
+        Rules:
+          - Id: DeleteObjectsAfter30Days
+            Status: Enabled
+            ExpirationInDays: 30
+      NotificationConfiguration:
+        Event: 's3:ObjectCreated:*'
+        Function: 'arn:aws:lambda:us-east-1:552100639279:function:lambda-event-notification-poc'
