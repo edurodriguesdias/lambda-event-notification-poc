@@ -2,25 +2,4 @@ AWSTemplateFormatVersion: 2010-09-09
 Resources:
   EventNotificationBucket:
     Type: 'AWS::S3::Bucket'
-    Properties:
-      AccessControl: Private
-      NotificationConfiguration:
-        LambdaConfigurations:
-            Function: 'arn:aws:lambda:us-east-1:552100639279:function:lambda-event-notification-poc'
-            Event: 's3:ObjectCreated:*'
-    DocumentsFolder:
-      Type: AWS::S3::Bucket::Object
-      Properties:
-        Bucket: !Ref EventNotificationBucket
-        Key: documents/
-        ContentType: application/vnd.amazon.ebook
-    SheetsFolder:
-        Type: AWS::S3::Bucket::Object
-        Properties:
-          Bucket: !Ref EventNotificationBucket
-          Key: sheets/
-          ContentType: application/vnd.amazon.ebook
-Outputs:
-  BucketName:
-    Value: !Ref EventNotificationBucket
-    Description: Name of the sample Amazon S3 bucket with a notification configuration.
+    Properties: {}
