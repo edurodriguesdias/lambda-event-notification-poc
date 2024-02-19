@@ -2,7 +2,7 @@ import type { S3Event, Context } from 'aws-lambda'
 import { S3Client, GetObjectCommand } from '@aws-sdk/client-s3';
 import { sdkStreamMixin } from '@aws-sdk/util-stream-node';
 
-const s3 = new S3Client({ });
+const s3 = new S3Client();
 
 export const handler = async (event: S3Event, context: Context) => {
 
