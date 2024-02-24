@@ -2,6 +2,10 @@
   "name": "Lambda Event Notification POC",
   "version": "1.0.0",
   "description": "",
+  "type": "module",
+  "engines": {
+    "node": ">= 20.9 < 21"
+  },
   "main": "dist/index.js",
   "rootDir": "src",
   "scripts": {
@@ -31,6 +35,7 @@
   },
   "dependencies": {
     "@aws-sdk/client-s3": "^3.511.0",
+    "@aws-sdk/credential-providers": "^3.515.0",
     "@aws-sdk/util-stream-node": "^3.374.0"
   }
 }
